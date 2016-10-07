@@ -1,4 +1,27 @@
-body
+
+ul
 {
-	margin: 0;
+	padding: 5px;
+}
+li
+{
+	list-style-type: none;
+}
+li, img
+{
+	width: 75px;
+	height: 75px;	
+	margin: 5px;
+	background-color: #AAA;
+}
+.selected
+{
+	border: solid #FFF 5px;
+	width: 66px;
+	height: 66px;
+}
+#palette
+{
+	background-color: #AAA;
+	width: 95px;
 }
