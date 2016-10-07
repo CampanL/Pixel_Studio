@@ -26,5 +26,13 @@ pixel_studio.palette = {
 			$('#colors').append($li);
 		}
 		this.select_color(this.colors[0]);
+
+		var self=this;
+
+		$('#colors').on('click','li',function()
+		{
+			let index = $('#colors li').index(this);
+			self.select_color(self.colors[index]);
+		});
 	}
 }
