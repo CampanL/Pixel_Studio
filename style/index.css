@@ -7,7 +7,7 @@ li
 {
 	list-style-type: none;
 }
-li, img
+li
 {
 	width: 75px;
 	height: 75px;	
@@ -16,7 +16,11 @@ li, img
 }
 li:hover, img:hover
 {
-	cursor: pointer;
+	cursor: pointer;	
+}
+#tools li
+{
+	background-size: cover;
 }
 .selected
 {

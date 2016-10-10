@@ -1,8 +1,12 @@
 class Tool
 {
-	constructor(name, icon)
+	constructor(name, src)
 	{
 	this.name = name;
-	this.icon = icon;
+	this.src = src;
+	}
+	source()
+	{
+		return "url("+this.src+")";
 	}
 }

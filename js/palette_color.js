@@ -1,4 +1,4 @@
-pixel_studio.palette = {
+pixel_studio.palette_color = {
 
 	colors: [],
 	color_selected:null,
@@ -8,9 +8,9 @@ pixel_studio.palette = {
 		$("#colors li").removeClass('selected')
 					   .eq(color.id)
 					   .addClass('selected')
-		},
+	},
 
-	init_color: function(colors)
+	init: function(colors)
 	{
 		this.colors = colors
 		let $one = $('#colors li').detach();
@@ -21,9 +21,9 @@ pixel_studio.palette = {
 
 				color.id = i;
 
-			$li.css("background-color",colors[i].to_string());
-			$li.attr("title",colors[i].name);
-			$('#colors').append($li);
+				$li.css("background-color",colors[i].to_string());
+				$li.attr("title",colors[i].name);
+				$('#colors').append($li);
 		}
 		this.select_color(this.colors[0]);
 
