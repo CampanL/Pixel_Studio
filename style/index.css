@@ -1,4 +1,7 @@
-
+body
+{
+	background-color: #CCC;
+}
 ul
 {
 	padding: 5px;
@@ -32,4 +35,10 @@ li:hover, img:hover
 {
 	background-color: #AAA;
 	width: 95px;
+}
+#my_canvas
+{
+	border: solid black 5px;
+	float: right;
+	background-color: #FFF;
 }
