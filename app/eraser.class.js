@@ -1,0 +1,14 @@
+class Eraser extends Tool
+{
+	constructor(canvas)
+	{
+		super('eraser','images/eraser.png');
+		this.canvas=canvas;
+		this.bgc = new Color('white',[255,255,255])
+	}
+	on_mousedown(mouse_event)
+	{
+		let position = this.canvas.screen_to_canvas(mouse_event);
+		this.canvas.draw(position.x,position.y, this.bgc);
+	}
+};
